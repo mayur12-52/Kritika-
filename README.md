@@ -1,1 +1,1 @@
-# Kritika-
+# Krutika kote
