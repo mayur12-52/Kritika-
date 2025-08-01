@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laser Light Agriculture Security System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f7fa;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #3a7bd5 0%, #00d2ff 100%);
+        }
+        
+        .card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .form-section {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .form-input {
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        
+        .form-input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+        
+        .checkbox-label:hover {
+            background-color: #f1f5f9;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #3a7bd5 0%, #00d2ff 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .system-image {
+            border-radius: 12px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="https://placehold.co/200x50?text=Laser+Agri+Security" alt="Laser Agriculture Security System Logo" class="h-10">
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Features</a>
+                    <a href="#how-it-works" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">How It Works</a>
+                    <a href="#survey" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Survey</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <!-- Mobile menu button -->
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg rounded-b-md">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#features" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Features</a>
+                <a href="#how-it-works" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">How It Works</a>
+                <a href="#survey" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Survey</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="w-full md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Protect Your Crops with Laser Security</h1>
+                    <p class="text-xl text-white mb-8">A revolutionary system to safeguard your farm from wild animals and theft without harming anyone.</p>
+                    <div class="flex space-x-4">
+                        <a href="#survey" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300">Take Survey</a>
+                        <a href="#how-it-works" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition-all duration-300">Learn More</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <img src="https://placehold.co/600x400?text=Laser+Security+System" alt="Modern laser security system installed in farmland protecting crops" class="rounded-xl shadow-2xl system-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Key Features</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our laser security system provides comprehensive protection for your farming needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="card p-8 rounded-xl bg-gray-50">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">24/7 Protection</h3>
+                    <p class="text-gray-600">Works day and night to keep animals away from your crops without disturbing the ecosystem.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="card p-8 rounded-xl bg-gray-50">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Cost Effective</h3>
+                    <p class="text-gray-600">Cheaper than traditional fencing and guard systems. Saves recurring labor costs.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="card p-8 rounded-xl bg-gray-50">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Smart Technology</h3>
+                    <p class="text-gray-600">Automatically detects movement and activates laser deterrents only when needed.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works Section -->
+    <div id="how-it-works" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">How It Works</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Simple yet effective protection mechanism for your farm</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="mb-8">
+                        <div class="flex items-start mb-6">
+                            <div class="flex-shrink-0 bg-blue-100 rounded-lg p-3 mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Motion Detection</h3>
+                                <p class="text-gray-600">Infrared sensors detect animal movement approaching protected areas.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="flex-shrink-0 bg-green-100 rounded-lg p-3 mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Laser Activation</h3>
+                                <p class="text-gray-600">Low-power laser beams create a visual barrier to deter animals without harming them.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-purple-100 rounded-lg p-3 mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Alert System</h3>
+                                <p class="text-gray-600">Optional SMS alerts notify you when the system is activated.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                        <h3 class="text-lg font-semibold text-blue-800 mb-3">Benefits for Farmers:</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                            <li>Doesn't harm animals physically</li>
+                            <li>Works even during power outages</li>
+                            <li>Lower maintenance than electric fences</li>
+                            <li>Customizable protection zones</li>
+                            <li>Weather-resistant design</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div>
+                    <img src="https://placehold.co/600x400?text=System+Diagram" alt="Diagram showing how laser security system works in agricultural fields with motion detection and laser barriers" class="rounded-xl shadow-lg system-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Survey Section -->
+    <div id="survey" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="form-section p-8 md:p-10">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-3">Laser Light Security Farmer Survey</h2>
+                    <p class="text-lg text-gray-600">Help us understand your farm security needs</p>
+                </div>
+                
+                <form id="surveyForm">
+                    <!-- Farmer Information -->
+                    <div class="mb-10">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-6 pb-2 border-b border-gray-200">Farmer Information</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="fullName" class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="fullName" name="fullName" class="w-full px-4 py-2 form-input rounded-lg">
+                            </div>
+                            
+                            <div>
+                                <label for="mobileNumber" class="block text-gray-700 mb-2">Mobile Number</label>
+                                <input type="tel" id="mobileNumber" name="mobileNumber" class="w-full px-4 py-2 form-input rounded-lg">
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <label for="address" class="block text-gray-700 mb-2">Village / Taluka / District</label>
+                            <input type="text" id="address" name="address" class="w-full px-4 py-2 form-input rounded-lg">
+                        </div>
+                        
+                        <div class="mt-6">
+                            <label class="block text-gray-700 mb-3">Type of Farming:</label>
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                                <label class="checkbox-label flex items-center space-x-2 cursor-pointer p-2 rounded-lg">
+                                    <input type="checkbox" name="farmingType" value="crop" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Crop Farming</span>
+                                </label>
+                                
+                                <label class="checkbox-label flex items-center space-x-2 cursor-pointer p-2 rounded-lg">
+                                    <input type="checkbox" name="farmingType" value="fruit" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Fruit/Vegetables</span>
+                                </label>
+                                
+                                <label class="checkbox-label flex items-center space-x-2 cursor-pointer p-2 rounded-lg">
+                                    <input type="checkbox" name="farmingType" value="organic" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Organic Farming</span>
+                                </label>
+                                
+                                <label class="checkbox-label flex items-center space-x-2 cursor-pointer p-2 rounded-lg">
+                                    <input type="checkbox" name="farmingType" value="animal" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Animal Husbandry</span>
+                                </label>
+                                
+                                <label class="checkbox-label flex items-center space-x-2 cursor-pointer p-2 rounded-lg">
+                                    <input type="checkbox" name="farmingType" value="other" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Other:</span>
+                                    <input type="text" name="farmingTypeOther" class="w-24 px-2 py-1 border rounded form-input">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Farming Details -->
+                    <div class="mb-10">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-6 pb-2 border-b border-gray-200">Farming Details</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="farmArea" class="block text-gray-700 mb-2">Farm Area (acres/hectares)</label>
+                                <input type="text" id="farmArea" name="farmArea" class="w-full px-4 py-2 form-input rounded-lg">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Current problems faced:</label>
+                                <div class="space-y-2">
+                                    <label class="flex items-center space-x-2">
+                                        <input type="radio" name="problems" value="animals" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                        <span>Wild animal attacks</span>
+                                    </label>
+                                    
+                                    <label class="flex items-center space-x-2">
+                                        <input type="radio" name="problems" value="theft" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                        <span>Crop theft</span>
+                                    </label>
+                                    
+                                    <label class="flex items-center space-x-2">
+                                        <input type="radio" name="problems" value="both" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                        <span>Both</span>
+                                    </label>
+                                    
+                                    <label class="flex items-center space-x-2">
+                                        <input type="radio" name="problems" value="none" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                        <span>None</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <label class="block text-gray-700 mb-2">How often do these problems occur?</label>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="radio" name="problemFrequency" value="rare" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span>Rarely</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="radio" name="problemFrequency" value="occasional" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span>Occasionally</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="radio" name="problemFrequency" value="weekly" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span>Weekly</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="radio" name="problemFrequency" value="daily" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span>Daily</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <label class="block text-gray-700 mb-2">Which animals come most often?</label>
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="checkbox" name="animals" value="wildBoar" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Wild Boar</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="checkbox" name="animals" value="monkeys" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Monkeys</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="checkbox" name="animals" value="deer" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Deer</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="checkbox" name="animals" value="cattle" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Cattle</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="checkbox" name="animals" value="other" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Other:</span>
+                                    <input type="text" name="animalsOther" class="w-24 px-2 py-1 border rounded form-input">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Laser System Awareness -->
+                    <div class="mb-10">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-6 pb-2 border-b border-gray-200">Laser System Awareness</h3>
+                        
+                        <div class="mb-6">
+                            <label class="block text-gray-700 mb-3">Have you heard about laser light security systems?</label>
+                            <div class="flex space-x-6">
+                                <label class="flex items-center space-x-2">
+                                    <input type="radio" name="awareness" value="yes" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span>Yes</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2">
+                                    <input type="radio" name="awareness" value="no" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span>No</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-gray-700 mb-3">Would you be interested in using such a system?</label>
+                            <div class="flex space-x-6">
+                                <label class="flex items-center space-x-2">
+                                    <input type="radio" name="interest" value="yes" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span>Yes</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2">
+                                    <input type="radio" name="interest" value="maybe" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span>Maybe</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2">
+                                    <input type="radio" name="interest" value="no" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span>No</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-gray-700 mb-3">Expected benefits (multiple choices possible):</label>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="checkbox" name="benefits" value="24x7" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>24/7 protection</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="checkbox" name="benefits" value="cost" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Lower cost solution</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="checkbox" name="benefits" value="labor" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Less human labor</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="checkbox" name="benefits" value="humane" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Humane animal control</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="checkbox" name="benefits" value="night" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Night-time security</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-gray-700 mb-3">Investment capability:</label>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="radio" name="investment" value="5000" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span>Below ₹5,000</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="radio" name="investment" value="5000-10000" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span>₹5,000 - ₹10,000</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="radio" name="investment" value="10000-20000" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span>₹10,000 - ₹20,000</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="radio" name="investment" value="20000+" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span>Above ₹20,000</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Current Security Methods -->
+                    <div class="mb-10">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-6 pb-2 border-b border-gray-200">Current Security Methods</h3>
+                        
+                        <div class="mb-6">
+                            <label class="block text-gray-700 mb-3">Current security methods:</label>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="checkbox" name="currentMethods" value="fence" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Fencing</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="checkbox" name="currentMethods" value="guard" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Night guard</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="checkbox" name="currentMethods" value="noise" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Noise makers</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="checkbox" name="currentMethods" value="electric" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Electric fencing</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2 p-2 rounded-lg checkbox-label">
+                                    <input type="checkbox" name="currentMethods" value="none" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                    <span>Nothing</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-gray-700 mb-3">Are you satisfied with current security?</label>
+                            <div class="flex space-x-6">
+                                <label class="flex items-center space-x-2">
+                                    <input type="radio" name="satisfaction" value="yes" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span>Yes</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2">
+                                    <input type="radio" name="satisfaction" value="somewhat" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span>Somewhat</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2">
+                                    <input type="radio" name="satisfaction" value="no" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span>No</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Feedback -->
+                    <div class="mb-10">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-6 pb-2 border-b border-gray-200">Feedback</h3>
+                        
+                        <div class="mb-6">
+                            <label class="block text-gray-700 mb-3">Would you like to see a demo?</label>
+                            <div class="flex space-x-6">
+                                <label class="flex items-center space-x-2">
+                                    <input type="radio" name="demoInterest" value="yes" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span>Yes</span>
+                                </label>
+                                
+                                <label class="flex items-center space-x-2">
+                                    <input type="radio" name="demoInterest" value="no" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span>No</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="comments" class="block text-gray-700 mb-2">Any questions or suggestions?</label>
+                            <textarea id="comments" name="comments" rows="4" class="w-full px-4 py-2 form-input rounded-lg"></textarea>
+                        </div>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <div class="flex justify-center">
+                        <button type="submit" class="submit-btn text-white px-8 py-3 rounded-lg font-medium">Submit Survey</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Contact Us</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Have questions or want to know more about our laser security systems?</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-6">Send us a message</h3>
+                        
+                        <form id="contactForm" class="space-y-6">
+                            <div>
+                                <label for="contactName" class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="contactName" name="contactName" class="w-full px-4 py-2 form-input rounded-lg">
+                            </div>
+                            
+                            <div>
+                                <label for="contactEmail" class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="contactEmail" name="contactEmail" class="w-full px-4 py-2 form-input rounded-lg">
+                            </div>
+                            
+                            <div>
+                                <label for="contactPhone" class="block text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" id="contactPhone" name="contactPhone" class="w-full px-4 py-2 form-input rounded-lg">
+                            </div>
+                            
+                            <div>
+                                <label for="contactMessage" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="contactMessage" name="contactMessage" rows="4" class="w-full px-4 py-2 form-input rounded-lg"></textarea>
+                            </div>
+                            
+                            <div>
+                                <button type="submit" class="submit-btn text-white px-6 py-3 rounded-lg font-medium w-full">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm h-full">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-6">Our Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 rounded-full p-3 mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-medium text-gray-800 mb-1">Phone</h4>
+                                    <p class="text-gray-600">+91 98765 43210</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-green-100 rounded-full p-3 mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-medium text-gray-800 mb-1">Email</h4>
+                                    <p class="text-gray-600">info@laseragrisecurity.in</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-purple-100 rounded-full p-3 mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-medium text-gray-800 mb-1">Address</h4>
+                                    <p class="text-gray-600">Agricultural Technology Park, Pune, Maharashtra</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="text-lg font-medium text-gray-800 mb-4">Business Hours</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex justify-between">
+                                    <span>Monday - Friday</span>
+                                    <span>9:00 AM - 6:00 PM</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Saturday</span>
+                                    <span>10:00 AM - 4:00 PM</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Sunday</span>
+                                    <span>Closed</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Laser Agri Security</h3>
+                    <p class="text-gray-400">Innovative solutions for modern farming challenges. Protecting crops the smart way.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white">Features</a></li>
+                        <li><a href="#how-it-works" class="text-gray-400 hover:text-white">How It Works</a></li>
+                        <li><a href="#survey" class="text-gray-400 hover:text-white">Survey</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Farmers' Stories</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <h4 class="text-lg font-semibold mb-2">Subscribe to Newsletter</h4>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg text-gray-800 w-full">
+                        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700">Submit</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 Laser Agri Security. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Form submission handling
+        const surveyForm = document.getElementById('surveyForm');
+        const contactForm = document.getElementById('contactForm');
+        
+        surveyForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for completing our survey! Your responses have been recorded.');
+            surveyForm.reset();
+            window.location.href = '#thank-you';
+        });
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            contactForm.reset();
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if(!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
