@@ -1,0 +1,4 @@
+document.getElementById('changeImageBtn').addEventListener('click', function() {
+    const image = document.getElementById('myImage');
+    image.src = 'https://via.placeholder.com/400/ff0000/ffffff?text=New+Image'; // Change to a new image
+});
